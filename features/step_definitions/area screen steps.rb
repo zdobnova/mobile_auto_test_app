@@ -16,16 +16,14 @@ end
 
 Then(/^I see "([^"]*)" in From headers$/) do |value|
   actual_value = find_element(id:"header_text_unit_from").text
-  if actual_value != value
-    fail ("Expected value is #{value}, but actual value #{actual_value}")
+  puts ("Expected value is" + value)
+  puts ("Actual value is" + actual_value)
   end
-end
 
 And(/^I see "([^"]*)" in to header$/) do |value|
   actual_value = find_element(id:"header_text_unit_to").text
-  if actual_value != value
-    fail ("Expected value is #{value}, but actual value #{actual_value}")
-    end
+  puts ("Expected value is" + value)
+  puts ("Actual value is" + actual_value)
 end
 
 And(/^I click on Clear it button$/) do
