@@ -12,7 +12,7 @@ Feature: User is able to convert area units
   @wip
   Scenario: User is able to swap values
     Given I see "Sq Kilometre" in From headers
-    And I see "Sq Kilometre" in to header
+    And I see "Sq Metre" in to header
     When I click on Swap button
     Then I see "Sq Metre" in From headers
     And I see "Sq Kilometre" in to header
